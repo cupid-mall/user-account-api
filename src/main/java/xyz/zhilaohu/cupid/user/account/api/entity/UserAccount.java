@@ -2,6 +2,7 @@ package xyz.zhilaohu.cupid.user.account.api.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * (UserAccount)实体类
@@ -34,7 +35,7 @@ public class UserAccount implements Serializable {
     /**
      * 是否注销/删除
      */
-    private boolean delete;
+    private Boolean delete;
     /**
      * 创建时间
      */
@@ -85,11 +86,11 @@ public class UserAccount implements Serializable {
         this.registerSourceId = registerSourceId;
     }
 
-    public boolean getDelete() {
+    public Boolean getDelete() {
         return delete;
     }
 
-    public void setDelete(boolean delete) {
+    public void setDelete(Boolean delete) {
         this.delete = delete;
     }
 

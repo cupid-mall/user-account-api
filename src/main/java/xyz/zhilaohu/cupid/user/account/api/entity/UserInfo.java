@@ -2,6 +2,7 @@ package xyz.zhilaohu.cupid.user.account.api.entity;
 
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * (UserInfo)实体类
@@ -43,6 +44,14 @@ public class UserInfo implements Serializable {
      * 个性签名
      */
     private String personalDescription;
+    /**
+     * 创建时间
+     */
+    private Date createDate;
+    /**
+     * 修改时间
+     */
+    private Date updateDate;
 
 
     public Integer getId() {
@@ -107,6 +116,22 @@ public class UserInfo implements Serializable {
 
     public void setPersonalDescription(String personalDescription) {
         this.personalDescription = personalDescription;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public Date getUpdateDate() {
+        return updateDate;
+    }
+
+    public void setUpdateDate(Date updateDate) {
+        this.updateDate = updateDate;
     }
 
 }
